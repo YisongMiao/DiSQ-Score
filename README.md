@@ -217,7 +217,7 @@ If you find our work interesting, you are most welcome to try our dataset/codeba
 Please kindly cite our research if you have used our dataset/codebase:
 
 ```
-@inproceedings{acl24a,
+@inproceedings{acl24discursive,
   title={Discursive Socratic Questioning: Evaluating the Faithfulness of Language Models' Understanding of Discourse Relations},
   author={Yisong Miao , Hongfu Liu, Wenqiang Lei, Nancy F. Chen, and Min-Yen Kan},
   booktitle={Proceedings of the Annual Meeting fof the Association of Computational Linguistics},
