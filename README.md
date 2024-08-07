@@ -179,7 +179,9 @@ To do so, `eval.py` automatically extracts the best results:
 | dataset_pdtb_prompt_v2_vicuna-13b | vicuna-13b | v2 |  |  | 0.325 | 0.512 | 0.766 | 0.829 | 0.087 | 0.515 | 0.201 | 0.352 | 0.369 | 0.0 | 0.334 | 0.46 | 0.199 | 0.511 | 0.074 |
 
 
-For example, this table shows the best result for PDTB datasets for available open-source models, which reproduce the results in our paper. 
+For example, this table shows the best result for PDTB datasets for available open-source models, which reproduce the radar figure in our paper:
+
+![Models' overall performance on DiSQ, displayed as radar figures](media/radar-figures.png)
 
 ## Discussion Experiments
 
