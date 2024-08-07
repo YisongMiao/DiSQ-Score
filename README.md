@@ -1,14 +1,15 @@
 # Official Implementation for Discursive Socratic Questioning (DiSQ) 
 
 Official implementation for our ACL 2024 paper: Discursive Socratic Questioning: Evaluating the Faithfulness of Language Models’ Understanding of Discourse Relations. \
-Yisong Miao , Hongfu Liu, Wenqiang Lei, Nancy F. Chen, Min-Yen Kan. ACL 2024. 
+Yisong Miao , Hongfu Liu, Wenqiang Lei, Nancy F. Chen, Min-Yen Kan. ACL 2024. \
 Paper PDF: [https://yisong.me/publications/acl24-DiSQ-CR.pdf](https://yisong.me/publications/acl24-DiSQ-CR.pdf) \
 Slides: [https://yisong.me/publications/acl24-DiSQ-Slides.pdf](https://yisong.me/publications/acl24-DiSQ-Slides.pdf) \
 Poster: [https://yisong.me/publications/acl24-DiSQ-Poster.pdf](https://yisong.me/publications/acl24-DiSQ-Poster.pdf)
 
 
-# Evaluate one model
-We provide a simplified one line command to evaluate any language model (LM) that has been hosted in the HuggingFace.
+# Evaluate one model with one line command
+Would you like to know the DiSQ Score for any language model? You are welcome to use this one line command! \
+We provide a simplified one line command to evaluate any language model (LM) that has been hosted in the HuggingFace model hub.
 You are recommended to use this for any new model (especially those not studied in our paper). 
 
 ```
