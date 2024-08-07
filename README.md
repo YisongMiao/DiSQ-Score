@@ -8,8 +8,9 @@ Poster: [https://yisong.me/publications/acl24-DiSQ-Poster.pdf](https://yisong.me
 
 
 # Evaluate one model with one line command
-Would you like to know the DiSQ Score for any language model? You are welcome to use this one line command! \
-We provide a simplified one line command to evaluate any language model (LM) that has been hosted in the HuggingFace model hub.
+Would you like to know the DiSQ Score for any language model? You are welcome to use this one line command!
+
+We provide a simplified command to evaluate any language model (LM) that has been hosted in the [HuggingFace model hub](https://huggingface.co/models).
 You are recommended to use this for any new model (especially those not studied in our paper). 
 
 ```
