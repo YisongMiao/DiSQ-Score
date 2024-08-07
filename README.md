@@ -165,7 +165,6 @@ Note that we choose the best results among versions v1 to v4 to marginalize the 
 
 To do so, `eval.py` automatically extracts the best results:
 
-```
 | taskcode | modelname | version | paraphrase | feature | Overall | Targeted | Counterfactual | Consistency | Comparison.Concession | Comparison.Contrast | Contingency.Reason | Contingency.Result | Expansion.Conjunction | Expansion.Equivalence | Expansion.Instantiation | Expansion.Level-of-detail | Expansion.Substitution | Temporal.Asynchronous | Temporal.Synchronous |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | dataset_pdtb_prompt_v4_7b | 7b | v4 |  |  | 0.074 | 0.956 | 0.084 | 0.929 | 0.03 | 0.083 | 0.095 | 0.095 | 0.077 | 0.054 | 0.086 | 0.068 | 0.155 | 0.036 | 0.047 |
@@ -173,7 +172,7 @@ To do so, `eval.py` automatically extracts the best results:
 | dataset_pdtb_prompt_v2_13b | 13b | v2 |  |  | 0.097 | 0.945 | 0.112 | 0.912 | 0.037 | 0.099 | 0.081 | 0.094 | 0.126 | 0.101 | 0.113 | 0.107 | 0.077 | 0.083 | 0.093 |
 | dataset_pdtb_prompt_v1_13bchat | 13bchat | v1 |  |  | 0.253 | 0.592 | 0.545 | 0.785 | 0.195 | 0.485 | 0.129 | 0.173 | 0.289 | 0.155 | 0.326 | 0.373 | 0.285 | 0.194 | 0.028 |
 | dataset_pdtb_prompt_v2_vicuna-13b | vicuna-13b | v2 |  |  | 0.325 | 0.512 | 0.766 | 0.829 | 0.087 | 0.515 | 0.201 | 0.352 | 0.369 | 0.0 | 0.334 | 0.46 | 0.199 | 0.511 | 0.074 |
-```
+
 
 For example, this table shows the best result for PDTB datasets for available open-source models, which reproduce the results in our paper. 
 
