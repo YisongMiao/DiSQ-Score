@@ -35,7 +35,7 @@ bash scripts/one_model.sh meta-llama/Meta-Llama-3-8B
 
 ## Specify Your Path 🏎️🛣️
 Before running the bash files, please edit the bash file to specify your path to your local HuggingFace Cache. \
-For example, in [scripts/unsupervised.sh](https://github.com/WING-NUS/ELCo/blob/main/scripts/unsupervised.sh):
+For example, in [scripts/one_model.sh](https://github.com/YisongMiao/DiSQ-Score/blob/main/scripts/one_model.sh):
 ```
 #!/bin/bash
 
