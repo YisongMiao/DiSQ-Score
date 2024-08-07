@@ -1,7 +1,6 @@
 # Official Implementation for Discursive Socratic Questioning (DiSQ) 
 
-Official implementation for our ACL 2024 paper: Discursive Socratic Questioning: Evaluating the Faithfulness of Language Models’ Understanding of Discourse Relations. \
-Yisong Miao , Hongfu Liu, Wenqiang Lei, Nancy F. Chen, Min-Yen Kan. ACL 2024. \
+Official implementation for our paper: Discursive Socratic Questioning: Evaluating the Faithfulness of Language Models’ Understanding of Discourse Relations (2024) Yisong Miao , Hongfu Liu, Wenqiang Lei, Nancy F. Chen, Min-Yen Kan. ACL 2024. \
 Paper PDF: [https://yisong.me/publications/acl24-DiSQ-CR.pdf](https://yisong.me/publications/acl24-DiSQ-CR.pdf) \
 Slides: [https://yisong.me/publications/acl24-DiSQ-Slides.pdf](https://yisong.me/publications/acl24-DiSQ-Slides.pdf) \
 Poster: [https://yisong.me/publications/acl24-DiSQ-Poster.pdf](https://yisong.me/publications/acl24-DiSQ-Poster.pdf)
@@ -17,7 +16,7 @@ You are recommended to use this for any new model (especially those not studied 
 bash scripts/one_model.sh <modelurl>
 ```
 
-The `modelurl` variable specifies the shortened path in the huggingface hub. 
+The <`modelurl`> variable specifies the shortened path in the huggingface hub, for example, 
 
 ```
 bash scripts/one_model.sh meta-llama/Meta-Llama-3-8B
