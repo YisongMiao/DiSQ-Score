@@ -18,6 +18,8 @@ pip install -r requirements.txt
 # Evaluate one model with one line command 🏃🧪🔬
 Would you like to know the DiSQ Score for any language model? You are welcome to use this one line command!
 
+![Socratic Abstract](media/socratic-abstract.png)
+
 We provide a simplified command to evaluate any language model (LM) that has been hosted in the [HuggingFace model hub](https://huggingface.co/models).
 You are recommended to use this for any new model (especially those not studied in our paper). 
 
