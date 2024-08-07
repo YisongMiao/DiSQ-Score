@@ -105,7 +105,10 @@ cd DiSQ-Score
 bash scripts/question_generation.sh
 ```
 
-This bash file will call `question_generation.py` to generate questions under different configurations. The arguments for `question_generation.py` are as follows:
+This bash file will call `question_generation.py` to generate questions under different configurations. 
+
+
+The arguments for `question_generation.py` are as follows:
 
 - `--dataset`: Specifies the dataset, either `pdtb` or `ted`.
 - `--modelname`: Aliases for models have been created. `13b` refers to LLaMA2-13B, `13bchat` to LLaMA2-13B-Chat, and `vicuna-13b` to Vicuna-13B. The specific URLs for these models can be found in `disq_config.py`.
@@ -114,6 +117,8 @@ This bash file will call `question_generation.py` to generate questions under di
 - `--feature`: Specifies which linguistic features to use for the discussion questions. Linguistic features include `conn` (discourse connective), and `context` (discourse context). Historical QA data requires a seperate script. 
 
 The output will be stored at, for example, `data/questions/dataset_pdtb_prompt_v1.json` under the configuration `dataset==pdtb` and `version==v1`.
+
+We ask our users to generate the questions themselves because this approach is automatic and helps save space in our GitHub repository (which could add up to \~200 MB). If you are unable to run the bash file, please contact us for the question files.
 
 
 ## Step 2 Question Answering
