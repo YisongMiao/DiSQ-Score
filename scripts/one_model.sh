@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Please define your own path here
+huggingface_path=YOUR_PATH
+
 # Check if modelurl argument is provided
 if [ -z "$1" ]; then
     echo "Usage: $0 <modelurl>"
@@ -17,27 +20,27 @@ bash scripts/question_generation.sh
 # PDTB
 for version in v1 v2 v3 v4
 do
-	python scripts/question_answering.py --dataset pdtb --modelurl $modelurl --version $version --device_number $device_number
+	python scripts/question_answering.py --dataset pdtb --modelurl $modelurl --version $version --device_number $device_number --hfpath $huggingface_path
 done
 
 # TED
 for version in v1 v2 v3 v4
 do
-	python scripts/question_answering.py --dataset ted --modelurl $modelurl --version $version --device_number $device_number
+	python scripts/question_answering.py --dataset ted --modelurl $modelurl --version $version --device_number $device_number --hfpath $huggingface_path
 done
 
 
 for version in v1 v2 v3 v4
 do
-	python scripts/eval.py --dataset pdtb --version $version --modelurl $modelurl
+	python scripts/eval.py --dataset pdtb --version $version --modelurl $modelurl --hfpath $huggingface_path
+done
+
+
+
+for version in v1 v2 v3 v4
+do
+	python scripts/eval.py --dataset ted --version $version --modelurl $modelurl --hfpath $huggingface_path
 done
 
 python scripts/eval.py --dataset pdtb --version v4 --modelurl $modelurl --verbalize 1
-
-
-for version in v1 v2 v3 v4
-do
-	python scripts/eval.py --dataset ted --version $version --modelurl $modelurl
-done
-
 python scripts/eval.py --dataset ted --version v4 --modelurl $modelurl --verbalize 1

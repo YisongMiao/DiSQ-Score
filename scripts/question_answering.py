@@ -108,8 +108,7 @@ if __name__ == '__main__':
     parser.add_argument('--version', type=str, default='v1', help='v1, v2, v3, or v4?')
     parser.add_argument('--paraphrase', type=str, default=None, help='Options: None (default), p1, or p2 (paraphrasing to our original questions)')
     parser.add_argument('--feature', type=str, default=None, help='Options: conn, context, or history. Due to dataset characteristics, conn and context are only applicable to PDTB.')
-    parser.add_argument('--hfpath', type=str, default='/mnt/data/yisong/hf-path', help='The cache_dir for the Hugging Face model.')
-
+    parser.add_argument('--hfpath', type=str, default='YOUR_PATH', help='The cache_dir for the Hugging Face model.')
     parser.add_argument('--device_number', type=int, default=0, help='Options: 0, 1, 2, 3, 4, 5, 6, 7. Default is 0.')
 
     p = parser.parse_args()

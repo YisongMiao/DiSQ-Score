@@ -5,8 +5,17 @@ Paper PDF: [https://yisong.me/publications/acl24-DiSQ-CR.pdf](https://yisong.me/
 Slides: [https://yisong.me/publications/acl24-DiSQ-Slides.pdf](https://yisong.me/publications/acl24-DiSQ-Slides.pdf) \
 Poster: [https://yisong.me/publications/acl24-DiSQ-Poster.pdf](https://yisong.me/publications/acl24-DiSQ-Poster.pdf)
 
+# Installation 📀💻
 
-# Evaluate one model with one line command
+```
+git clone git@github.com:YisongMiao/DiSQ-Score.git
+conda activate
+cd DiSQ-Score
+cd scripts
+pip install -r requirements.txt
+```
+
+# Evaluate one model with one line command 🏃🧪🔬
 Would you like to know the DiSQ Score for any language model? You are welcome to use this one line command!
 
 We provide a simplified command to evaluate any language model (LM) that has been hosted in the [HuggingFace model hub](https://huggingface.co/models).
@@ -21,6 +30,19 @@ The <`modelurl`> variable specifies the shortened path in the huggingface hub, f
 ```
 bash scripts/one_model.sh meta-llama/Meta-Llama-3-8B
 ```
+
+## Specify Your Path 🏎️🛣️
+Before running the bash files, please edit the bash file to specify your path to your local HuggingFace Cache. \
+For example, in [scripts/unsupervised.sh](https://github.com/WING-NUS/ELCo/blob/main/scripts/unsupervised.sh):
+```
+#!/bin/bash
+
+# Please define your own path here
+huggingface_path=YOUR_PATH
+```
+you may change `YOUR_PATH` to the absolute directory location of your Huggingface Cache (e.g. `/disk1/yisong/hf-cache`).\
+We recommend at least 200GB free space. 
+
 An output text file will be saved at `data/results/verbalizations/Meta-Llama-3-8B.txt`, which contains:
 
 ```
@@ -62,9 +84,9 @@ DiSQ Score for Temporal.Synchronous: 0.164
 === End of the results for model: Meta-Llama-3-8B ===
 ```
 
-# Step by step walk through
+# Step by step walk through 🚶🧪🔬
 
-## Preliminary: Dataset
+## Preliminary: Dataset 📀💿💽
 
 We store our datasets in JSON files located at `data/datasets/dataset_pdtb.json` and `data/datasets/dataset_ted.json`. For example, let's take one instance from the PDTB dataset:
 
@@ -98,7 +120,7 @@ Here are the fields in this dictionary entry:
 - `context`: The discourse context.
 
 
-## Step 1 Question Generation
+## Step 1 Question Generation 🙋🧑‍🏫
 
 ```
 cd DiSQ-Score
@@ -121,7 +143,7 @@ The output will be stored at, for example, `data/questions/dataset_pdtb_prompt_v
 We ask our users to generate the questions themselves because this approach is automatic and helps save space in our GitHub repository (which could add up to \~200 MB). If you are unable to run the bash file, please contact us for the question files.
 
 
-## Step 2 Question Answering
+## Step 2 Question Answering 💭💬
 
 ```
 cd DiSQ-Score
@@ -139,7 +161,7 @@ The output will be stored at, for example, `data/results/13bchat_dataset_pdtb_pr
 **Caveat:** The Wizard model has been taken down by the developers. We advise users not to try these models. Check the discussion thread at: [https://huggingface.co/posts/WizardLM/329547800484476](https://huggingface.co/posts/WizardLM/329547800484476).
 
 
-## Step 3 Evaluation and Scoring
+## Step 3 Evaluation and Scoring ☑️💯
 
 ```
 cd DiSQ-Score
@@ -183,14 +205,15 @@ For example, this table shows the best result for PDTB datasets for available op
 
 ![Models' overall performance on DiSQ, displayed as radar figures](media/radar-figures.png)
 
-## Discussion Experiments
+## Discussion Experiments 🔬🤔
 
 We also provide instructions for evaluating discussion questions about linguistic features:
 
 - To evaluate discourse connectives and discourse context, specify `--feature` as `conn` and `context` in `question_generation.py` (Step 1) and re-run all experiments.
 - To evaluate historical QA data, run `question_generation_history.py`. This script will extract answers from the stored QA results and generate new questions.
 
-# Environment
+# Environment 🧪
+
 ## Legacy environment
 
 For most NLPers, probably you will be able to run our code with your existing virtual (conda) environments.
