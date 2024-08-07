@@ -1,0 +1,6 @@
+torch==2.0.1
+transformers==4.30.0
+sentencepiece
+protobuf
+scikit-learn
+pandas

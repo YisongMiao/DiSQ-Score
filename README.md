@@ -214,7 +214,7 @@ We also provide instructions for evaluating discussion questions about linguisti
 
 # Environment 🧪
 
-## Legacy environment
+## Legacy environment 🏕️🏕️
 
 For most NLPers, probably you will be able to run our code with your existing virtual (conda) environments.
 
@@ -228,7 +228,7 @@ scikit-learn
 pandas
 ```
 
-## Modern environment
+## Modern environment 🆕🏕️🏕️
 However, we have observed that newer models require upgraded package versions:
 ```
 torch==2.4.0
@@ -241,7 +241,7 @@ pandas
 
 
 
-# Citations
+# Citations 📜📝
 If you find our work interesting, you are most welcome to try our dataset/codebase. \
 Please kindly cite our research if you have used our dataset/codebase:
 
@@ -263,6 +263,6 @@ If you have questions or bug reports, please raise an issue or contact us direct
 Email address: 🐿@🐰\
 where 🐿️=`yisong`, 🐰=`comp.nus.edu.sg`
 
-## Licence
+## Licence 🪪🪪
 
 CC By 4.0
